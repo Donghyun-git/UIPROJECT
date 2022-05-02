@@ -1,0 +1,57 @@
+/* 레이아웃 */
+#header {
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* 가운데 영역 */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* 여백 */
+.row {
+  padding: 0 28px;
+}
+
+/* 헤더 영역 */
+.header {}
+
+.header h1 {
+  float: left;
+}
+
+.header h1 em {
+  padding: 8px 8px 5px 0;
+  display: inline-block;
+
+
+}
+
+.header .nav { float: right;}
+
+.header .nav ul {
+  border-left: 1px solid #c6c6c6;
+}
+
+.header .nav ul li {
+  float: left;
+  padding: 25.5px 20px 34.5px 20px;
+  text-align: center;
+  width: 103px;
+  border-right: 1px solid #c6c6c6;
+  transition: 0.3s all;
+}
+
+.header .nav ul li a {
+  display: block;
+  padding: 19px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #444;
+}
+.header .nav ul li:hover {
+  background-color: #e0dbab;
+}
