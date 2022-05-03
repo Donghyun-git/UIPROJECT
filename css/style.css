@@ -59,3 +59,20 @@
 .slider .ss1 { background: url(../img/big_slider.jpg) no-repeat center center; background-size: cover;}
 .slider .ss2 { background: url(../img/big_slider.jpg) no-repeat center center; background-size: cover;}
 .slider .ss3 { background: url(../img/big_slider.jpg) no-repeat center center; background-size: cover;}
+
+/* 미디어쿼리 */
+
+@media (max-width: 1280px){
+  .container{ width: 100%;}
+}
+
+@media (max-width: 780px){
+  .nav { display: none;}
+  .header h1 {
+    float: none;
+    text-align: center;
+    }
+    .header h1 em {
+      padding-left: 10px;
+    }
+}
