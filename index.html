@@ -68,6 +68,62 @@
 			</div>
 		</div>
 	</header>
+<!-- //header -->
 
+<section id="banner">
+  <div class="slider">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide ss1">
+        <div class="container"><div class="row">
+          <h2>강아지 <em>리트리버</em></h2>
+          <p>대형견</p>
+        </div>
+      </div>
+
+      </div>
+      <div class="swiper-slide ss2">
+        <div class="container"><div class="row">
+          <h2>강아지 <em>비숑</em></h2>
+          <p>중형견</p>
+        </div>
+      </div>
+      </div>
+      <div class="swiper-slide ss3">
+        <div class="container"><div class="row">
+          <h2>강아지 <em>포메라니안</em></h2>
+          <p>소형견</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+</section>
+
+<script src="js/jquery.min_1.12.4.js"></script>
+<script src="js/modernizr-custom.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="ie-checker.js"></script>
+<script>
+const swiper = new Swiper('.swiper-container',{
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+    });
+</script>
 </body>
 </html>
