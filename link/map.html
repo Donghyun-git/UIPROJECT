@@ -82,15 +82,15 @@
   <div class="container">
     <div class="row">
         <div id="map">
-        
-        </div>    
+
+        </div>
     </div>
-   
+
     <div class="map_info">
 
 
     </div>
-    
+
 
     </div>
   </section>
@@ -133,7 +133,7 @@ var mapDiv = document.getElementById('map'); // 'map'으로 선언해도 동일
     new naver.maps.LatLng(36.771507, 127.094305));  //지도 영역*/
 var areaArr = [];
 function initMap() {
-    
+
     areaArr.push(
         {location: '천호지', lat: 36.833174, lng: 127.172445},
         {location: '천안천', lat: 36.825558, lng: 127.159469},
@@ -173,7 +173,7 @@ for(var i=0; i<areaArr.length; i++){
 }
 
 function getClickHandler(seq) {
-		
+
         return function(e) {  // 마커를 클릭하는 부분
             var marker = markers[seq], // 클릭한 마커의 시퀀스로 찾는다.
                 infoWindow = infoWindows[seq]; // 클릭한 마커의 시퀀스로 찾는다

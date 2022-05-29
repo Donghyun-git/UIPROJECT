@@ -1,3 +1,7 @@
+<?php
+include 'link/inc_head.php';
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -57,12 +61,12 @@
 					<nav class="nav">
 						<ul class="clearfix">
 							<li><a href="#">강아지 종류</a></li>
-							<li><a href="#">강아지 장난감</a></li>
+							<li><a href="link/sell.html">강아지 장난감</a></li>
 							<li><a href="#">건강 도우미</a></li>
 							<li><a href="link/map.html">천안 산책로</a></li>
 							<li><a href="#">병원정보</a></li>
 							<li><a href="#">게시판</a></li>
-              <li><a href="#">Sign in/up</a></li>
+              <li><a href="link/login.html">Sign in/up</a></li>
 						</ul>
 					</nav>
 				</div>
