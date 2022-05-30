@@ -1,3 +1,4 @@
+
 /* 레이아웃 */
 #header {
   width: 100%;
@@ -17,7 +18,6 @@
 }
 
 /* 헤더 영역 */
-.header {}
 
 .header h1 {
   float: left;
@@ -32,6 +32,12 @@
   float: right;
 }
 
+
+
+.header .nav ul > li:last-child:hover {
+  background-color: #fff;
+}
+
 .header .nav ul {
   border-left: 1px solid #c6c6c6;
 }
@@ -43,6 +49,15 @@
   width: 103px;
   border-right: 1px solid #c6c6c6;
   transition: 0.3s all;
+}
+
+.header .nav ul li h2 {
+  position: absolute; 
+  top: 40px;
+}
+
+.header .nav ul > li:last-child {
+  border-style: none;
 }
 
 .header .nav ul li a {
@@ -67,7 +82,7 @@
   position: relative;
   margin-top: 50px;
   font-size: 25px;
-  text-algin: center;
+  text-align: center;
   font-weight: 800;
 }
 
@@ -81,7 +96,14 @@
   background: #000;
 }
 
-#info i {
+#info .fa-bullhorn {
+  font-size: 20px;
+  padding-right: 10px;
+  text-shadow: 2px 2px 2px #a89c5a;
+
+}
+
+#info .fa-shopping-cart {
   font-size: 20px;
   padding-right: 10px;
   text-shadow: 2px 2px 2px #a89c5a;
@@ -93,10 +115,23 @@
 }
 
 .dog {
+  position: relative;
   display: inline-block;
-  width: 292px;
+  width: 290px;
   height: 500px;
   border: 1px solid #c4c4c4;
+}
+
+
+.coin {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.coin h2 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .dog figure img {
@@ -105,7 +140,7 @@
 }
 
 .dog .write {
-  width: 292px;
+  width: 290px;
   height: 125px;
   font-size: 17px;
 }
@@ -116,6 +151,7 @@
   width: 100%;
   height: 500px;
 }
+
 
 .slider .ss1 {
   background: url(../img/big_slider.jpg) no-repeat center center;

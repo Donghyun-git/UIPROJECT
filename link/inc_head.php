@@ -10,8 +10,7 @@
 
 
     $sql = "select name from userTBL where user_no= '".$_SESSION['id']."'";
-    $ret = mysqli_query($con, $sql);
-    $row = mysqli_fetch_array($ret);
+    $row = mysqli_query($con, $sql);
     $name = $row['name'];
     $_SESSION['name'] = $name;
   }

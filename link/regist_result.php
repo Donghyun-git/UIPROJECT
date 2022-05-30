@@ -21,7 +21,7 @@
     ?>
       <script>
         alert("회원가입에 성공하였습니다.")
-        location.href = "login.php";
+        location.href = "login.html";
     </script>
     <?php
   }

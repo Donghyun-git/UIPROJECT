@@ -2,11 +2,11 @@
 <?php
   $con = mysqli_connect("localhost", "root", "1234", "dog_info") or die ("mysql 접속 실패");
 
-	//POST로 받아온 아이다와 비밀번호가 비었다면 알림창을 띄우고 전 페이지로 돌아감
+	
   $id = $_POST['id'];
   $pw = $_POST['pw'];
 
-  $sql = "SELECT * FROM usertbl WHERE user_no = '".$_POST['user_no']."'";
+  $sql = "SELECT * FROM dog WHERE id = '".$_POST['id']."'";
 
   $ret = mysqli_query($con, $sql);
 
@@ -19,18 +19,20 @@
 }
 
 $passwordResult = password_verify($pw, $hashedPassword);
-if ($passwordResult === true) {
+if ($passwordResult === true || $id == $row['id']) {
     // 로그인 성공
     // 세션에 id 저장
     session_start();
     $_SESSION['id'] = $row['id'];
+    $_SESSION['name']= $row['name'];
     print_r($_SESSION);
     echo $_SESSION['id'];
+    echo $_SESSION['name'];
 
 ?>
     <script>
         alert("로그인에 성공하였습니다.")
-        location.href = "index.html";
+        location.href = "../index.php";
     </script>
 <?php
 } else {
