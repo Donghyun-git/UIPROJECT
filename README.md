@@ -5,4 +5,4 @@
 사용 언어
 - html css js jquery 플러그인 (swiper.js)
 
-> https://ddongs.dothome.co.kr
+> ddongs.dothome.co.kr
