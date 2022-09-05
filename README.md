@@ -5,4 +5,4 @@
 사용 언어
 - html css js jquery 플러그인 (swiper.js)
 
-> https://resilient-kleicha-cf7cd9.netlify.app
+> https://ddongs.dothome.co.kr
