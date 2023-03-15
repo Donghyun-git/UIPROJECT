@@ -12,4 +12,4 @@ dothome apache 서버 웹호스팅
 -be
 php, mysql
 
-> ddongs.dothome.co.kr
+> http://sogaehagae.dothome.co.kr/
